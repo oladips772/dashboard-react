@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  /* background: rgb(26, 25, 25); */
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* side bar styling */
+.sidebar {
+  width: 200px;
+  border-right: 1px solid rgb(224, 217, 217);
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar_container .logo {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  padding: 10px;
+}
+
+.logo h2 {
+  background: rgb(89, 4, 129);
+  color: white;
+  height: 30px;
+  width: 30px;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  display: flex;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid white;
+}
+
+.logo h3 {
+  color: whitesmoke;
+}
+
+.sidebar_item {
+  display: flex;
+  align-items: center;
+  margin: 10px 10px;
+  cursor: pointer;
+  padding: 8px;
+  color: gray;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+}
+
+.sidebar_item p {
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.sidebar_item:hover {
+  background: rgba(152, 104, 241, 0.747);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.file_div {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(87, 76, 245, 0.116);
+  padding: 10px;
+  border-radius: 4px;
+  width: 170px;
+  margin-left: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.file_div img {
+  width: 60px;
+  height: 60px;
+}
+
+.file_div p {
+  word-break: break-all;
+  color: whitesmoke;
+}
+
+.file_div p span {
+  color: rgb(89, 4, 129);
+  font-weight: 600;
+}
+
+.file_div button {
+  background: rgb(89, 4, 129);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 180px;
+}
+
+
+/*  */
+.form_div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  width: 170px;
+  margin-left: 5px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+
+.form_div input,button{
+  width: 270px;
+  height:34px;
+  margin: 5px 0;
 }
